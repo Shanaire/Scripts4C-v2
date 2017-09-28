@@ -8,7 +8,6 @@ public class FadeToCamPos : MonoBehaviour
     /* 
      * This script is to be used to fade the camera when the camera switch is about to happen
      * 
-     * 
      */
 
 

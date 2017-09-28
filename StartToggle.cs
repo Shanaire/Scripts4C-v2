@@ -9,28 +9,19 @@ public class StartToggle : MonoBehaviour
      * 
      * [Might also need to disable the raycasting script in this file before the main interface becomes active]
      * 
-     * 
      */
 
     //_____________________________________REFERENCE FILES_________________________________//
 
-    public GameObject FloorPanel;
-    private DeactivatePan DeactivatePanel;
-    //_____________________________________________________________________________________//1
+    //_____________________________________________________________________________________//
     
     public GameObject StartInterface;
     public GameObject ScreenInterface;
-
-    private void Start()
-    {
-        //DeactivatePanel = FloorPanel.gameObject.GetComponent<DeactivatePan>();
-    }
 
     public void UILaunch()
     {
         StartInterface.SetActive(true);
         ScreenInterface.SetActive(false);
     }
-
 
 }

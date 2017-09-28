@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Deactivate : MonoBehaviour
 {
+    /* 
+     * This script is to be used to control the toggling of the rooms layouts and the text that is also associated to the specific room layout. 
+     * 
+     */
 
     public GameObject Button;
     public GameObject Title;
@@ -11,14 +15,7 @@ public class Deactivate : MonoBehaviour
     public List<GameObject> Panels = new List<GameObject> ();
     public List<GameObject> TitleDeAct = new List<GameObject>();
     
-    //public GameObject Panel_1;
-    //public GameObject Panel_2;
-    //public GameObject Panel_3;
-    //public GameObject Panel_4;
-
-
-    //private int set = 0; // using this set variable to toggle through the different if statements
-
+    
     private bool condition = true || false;
 
 
