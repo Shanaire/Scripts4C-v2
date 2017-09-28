@@ -51,6 +51,8 @@ using UnityEngine.UI;
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        // This is the even that happen when the mouse pointer enters the space of the pointer, similar to mouse enter, 
+        // When this happens the color of the text's base colour gets multiplied by the highlight color of the button, giving it the same color.
         if (btn.interactable)
         {
             txt.color = baseColor * btn.colors.highlightedColor * btn.colors.colorMultiplier;
@@ -63,6 +65,8 @@ using UnityEngine.UI;
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        // This is the even that happen when the mouse pointer enters the space of the pointer, similar to mouse down, 
+        // When this happens the color of the text's base colour gets multiplied by the pressed color of the button, giving it the same color.
         if (btn.interactable)
         {
             txt.color = baseColor * btn.colors.pressedColor * btn.colors.colorMultiplier;
@@ -75,6 +79,8 @@ using UnityEngine.UI;
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        // This is the even that happen when the mouse pointer is released, similar to mouse up, 
+        // When this happens the color of the text's base colour gets multiplied by the highlight color of the button, giving it the same color.
         if (btn.interactable)
         {
             txt.color = baseColor * btn.colors.highlightedColor * btn.colors.colorMultiplier;
@@ -87,6 +93,8 @@ using UnityEngine.UI;
 
     public void OnPointerExit(PointerEventData eventData)
     {
+        // This is the even that happen when the mouse pointer exits the space of the pointer, similar to mouse exist, 
+        // When this happens the color of the text's base colour gets multiplied by the normal color of the button, giving it the same color.
         if (btn.interactable)
         {
             txt.color = baseColor * btn.colors.normalColor * btn.colors.colorMultiplier;
