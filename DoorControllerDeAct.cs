@@ -9,6 +9,15 @@ public class DoorControllerDeAct : MonoBehaviour
      * 
      */
 
+    //______________________________________________REFERENCE SCRIPTS_____________________________________//
+
+    public CameraManager CamManager;
+
+        //____________________________________________________________________________________________________//
+
+
+
+
     // A list of elements that require the partition if is open 
     public List<GameObject> WithOutPartitionElements = new List<GameObject>();
     /*
@@ -30,7 +39,15 @@ public class DoorControllerDeAct : MonoBehaviour
     bool partitionOpen;
     bool condition;
 
-    public void DoorController()
+    public void ViewPointDoor()
+    {
+        if (CamManager.CameraCount == 14)
+        {
+            DoorController();
+        }
+    }
+
+    private void DoorController()
     {
 
         if (partitionOpen == true)

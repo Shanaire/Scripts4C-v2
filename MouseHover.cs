@@ -74,9 +74,9 @@ public class MouseHover : MonoBehaviour
                         InitialColor = SubSection1Rooms.material.color;
                         Color.RGBToHSV(InitialColor, out h, out s, out v);
 
-                        v = 1.5f;
+                        v = 1.2f;
                         if (v == 0)
-                        { v = 1.5f; }
+                        { v = 1.2f; }
 
                         Selected = Color.HSVToRGB(h, s, v);
                         Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
@@ -88,9 +88,9 @@ public class MouseHover : MonoBehaviour
                     InitialColor = render.material.color;
                     Color.RGBToHSV(InitialColor, out h, out s, out v);
 
-                    v = 1.5f;
+                    v = 1.2f;
                     if (v == 0)
-                    { v = 1.5f; }
+                    { v = 1.2f; }
 
                     Selected = Color.HSVToRGB(h, s, v);
                     Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
@@ -115,9 +115,9 @@ public class MouseHover : MonoBehaviour
                         InitialColor = SubSection1Rooms.material.color;
                         Color.RGBToHSV(InitialColor, out h, out s, out v);
 
-                        v = 1.5f;
+                        v = 1.2f;
                         if (v == 0)
-                        { v = 1.5f; }
+                        { v = 1.2f; }
 
                         Selected = Color.HSVToRGB(h, s, v);
                         Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
@@ -129,9 +129,9 @@ public class MouseHover : MonoBehaviour
                     InitialColor = render.material.color;
                     Color.RGBToHSV(InitialColor, out h, out s, out v);
 
-                    v = 1.5f;
+                    v = 1.2f;
                     if (v == 0)
-                    { v = 1.5f; }
+                    { v = 1.2f; }
 
                     Selected = Color.HSVToRGB(h, s, v);
                     Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
@@ -156,9 +156,9 @@ public class MouseHover : MonoBehaviour
                         InitialColor = SubSection1Rooms.material.color;
                         Color.RGBToHSV(InitialColor, out h, out s, out v);
 
-                        v = 1.5f;
+                        v = 1.2f;
                         if (v == 0)
-                        { v = 1.5f; }
+                        { v = 1.2f; }
 
                         Selected = Color.HSVToRGB(h, s, v);
                         Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
@@ -170,9 +170,9 @@ public class MouseHover : MonoBehaviour
                     InitialColor = render.material.color;
                     Color.RGBToHSV(InitialColor, out h, out s, out v);
 
-                    v = 1.5f;
+                    v = 1.2f;
                     if (v == 0)
-                    { v = 1.5f; }
+                    { v = 1.2f; }
 
                     Selected = Color.HSVToRGB(h, s, v);
                     Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
@@ -200,9 +200,9 @@ public class MouseHover : MonoBehaviour
                         InitialColor = SubSection1Rooms.material.color;
                         Color.RGBToHSV(InitialColor, out h, out s, out v);
 
-                        v = 1.5f;
+                        v = 1.2f;
                         if (v == 0)
-                        { v = 1.5f; }
+                        { v = 1.2f; }
 
                         Selected = Color.HSVToRGB(h, s, v);
                         Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
@@ -214,9 +214,9 @@ public class MouseHover : MonoBehaviour
                     InitialColor = render.material.color;
                     Color.RGBToHSV(InitialColor, out h, out s, out v);
 
-                    v = 1.5f;
+                    v = 1.2f;
                     if (v == 0)
-                    { v = 1.5f; }
+                    { v = 1.2f; }
 
                     Selected = Color.HSVToRGB(h, s, v);
                     Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
@@ -242,9 +242,9 @@ public class MouseHover : MonoBehaviour
                         InitialColor = SubSection1Rooms.material.color;
                         Color.RGBToHSV(InitialColor, out h, out s, out v);
 
-                        v = 1.5f;
+                        v = 1.2f;
                         if (v == 0)
-                        { v = 1.5f; }
+                        { v = 1.2f; }
 
                         Selected = Color.HSVToRGB(h, s, v);
                         Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
@@ -256,9 +256,9 @@ public class MouseHover : MonoBehaviour
                     InitialColor = render.material.color;
                     Color.RGBToHSV(InitialColor, out h, out s, out v);
 
-                    v = 1.5f;
+                    v = 1.2f;
                     if (v == 0)
-                    { v = 1.5f; }
+                    { v = 1.2f; }
 
                     Selected = Color.HSVToRGB(h, s, v);
                     Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
