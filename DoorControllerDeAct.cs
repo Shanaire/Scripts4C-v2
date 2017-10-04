@@ -47,6 +47,31 @@ public class DoorControllerDeAct : MonoBehaviour
         }
     }
 
+    void ConditionTruePartition()
+    {
+        Debug.Log("---CHANGING STATUS---" + condition);
+
+        foreach (GameObject item in WithPartitionElements)
+            item.SetActive(true);
+
+        foreach (GameObject item in WithOutPartitionElements)
+            item.SetActive(false);
+    }
+
+    void ConditionFalsePartition()
+    {
+        Debug.Log("---CHANGING STATUS---" + condition);
+
+        // Setting all gameobjects in the list to inactive
+
+        foreach (GameObject item in WithPartitionElements)
+            item.SetActive(false);
+
+        foreach (GameObject item in WithOutPartitionElements)
+            item.SetActive(true);
+    }
+
+
     private void DoorController()
     {
 
@@ -55,17 +80,14 @@ public class DoorControllerDeAct : MonoBehaviour
             this.GetComponent<Animator>().SetTrigger("open");
             partitionOpen = false;
             Debug.Log(partitionOpen);
+
+            // Add a delay timer here so that the animation finishes before ,making the room elements become active.
+
             condition = true;
 
             if (condition == true)
             {
-                Debug.Log("---CHANGING STATUS---" + condition);
-
-                foreach (GameObject item in WithPartitionElements)
-                    item.SetActive(true);
-
-                foreach (GameObject item in WithOutPartitionElements)
-                    item.SetActive(false);
+                ConditionTruePartition();
 
                 condition = false;
             }
@@ -77,17 +99,11 @@ public class DoorControllerDeAct : MonoBehaviour
             partitionOpen = true;
             Debug.Log(partitionOpen);
 
+            // Add a delay timer here so that the animation finishes before ,making the room elements become active.
+
             if (condition == false)
             {
-                Debug.Log("---CHANGING STATUS---" + condition);
-
-                // Setting all gameobjects in the list to inactive
-
-                foreach (GameObject item in WithPartitionElements)
-                    item.SetActive(false);
-
-                foreach (GameObject item in WithOutPartitionElements)
-                    item.SetActive(true);
+                Invoke("ConditionFalsePartition", 2.5f);
                 condition = true;
             }
         }
