@@ -13,7 +13,12 @@ public class BoolForCentrePanels : MonoBehaviour
     // public GameObject centrePanel;
 
     // The Boolean toggle for these panels
-    public bool panelCondition = false;
+    public bool panelCondition;
+
+    private void Awake()
+    {
+        panelCondition = false;
+    }
 
     private void Update()
     {
@@ -23,7 +28,6 @@ public class BoolForCentrePanels : MonoBehaviour
 
     public void _panelCondition()
     {
-        panelCondition = false;
         if (panelCondition == true)
         {
             panelCondition = true;

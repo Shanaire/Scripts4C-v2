@@ -421,7 +421,7 @@ public class MouseHover : MonoBehaviour
         // Removing the Highlighted colour effect when at at a single room level to disable the highlighting
         else
         {
-            // By making this function true, it is going to be used to disable the raycast function.
+            // By making this function true, it is going to be used to disable the raycast function. Given that we are at one of the room Cameras
             _CameraManagerObject.BoolForCenPan.panelCondition = true;
 
             // SubSection 1
@@ -524,10 +524,11 @@ public class MouseHover : MonoBehaviour
             }
         }
 
-        // Subsection 2
+        // Subsection 2 
+        
         else if ((tag == "Room4") || (tag == "Room5") || (tag == "Room6"))
         {
-            if (_CameraManagerObject.CameraCount != 1)
+            if (_CameraManagerObject.CameraCount == 10)
             {
                 List<GameObject> RoomFloor = new List<GameObject>
                 {
@@ -546,12 +547,30 @@ public class MouseHover : MonoBehaviour
                     SubSection1Rooms.material.color = InitialColor;
                 }
             }
+            // Room 4
+            else if (_CameraManagerObject.CameraCount == 14)
+            {
+                List<GameObject> RoomFloor = new List<GameObject>
+                {
+                    // Finding all object with the respective tag and add then to a list
+                    GameObject.FindGameObjectWithTag("Room4")
+                };
+
+                Debug.Log("Adding OBJ" + RoomFloor);
+                // Now i'm gonna interate through the list of gameobjects added to the list and change their colors
+
+                foreach (GameObject item in RoomFloor)
+                {
+                    Renderer SubSection1Rooms = item.GetComponent<Renderer>();
+                    SubSection1Rooms.material.color = InitialColor;
+                }
+            }
             else
             {
                 render.material.color = InitialColor;
             }
         }
-
+        
         // Subsection 3
         else if (tag == "Room7")
         {

@@ -15,14 +15,18 @@ public class DeactivateCentrePanelControl : MonoBehaviour
 
 
     //__________________________________REFERENCED FILES_________________________________//
-    // The actual panel objects
-    public GameObject cPanel;
-    // Boolean for the panel objects
-    public BoolForCentrePanels _cPanelBool; // true meanse 0 raycast, false means do raycast
+
+    public CameraManager CamManager;
+
+
 
     // Referencing the script to disable the raycasting on the floor
 
     //___________________________________________________________________________________//
+    // The actual panel objects
+    public GameObject cPanel;
+    // Boolean for the panel objects
+    public BoolForCentrePanels _cPanelBool; // true meanse 0 raycast, false means do raycast
 
     // A light of panel that are going be deactivated
     public List<GameObject> cPanel_Deactivate = new List<GameObject>();
@@ -30,15 +34,7 @@ public class DeactivateCentrePanelControl : MonoBehaviour
     public void CPanelToggle()
     {
         // This cPanel is if the gameObject is active, rather than the script
-        if (cPanel.activeSelf == true)
-        {
-            Debug.Log("---CHANGING STATUS---" + _cPanelBool.panelCondition);
-
-            cPanel.gameObject.SetActive(false);
-            _cPanelBool.panelCondition = false;
-
-        }
-        else if (_cPanelBool.panelCondition == false)
+        if (cPanel.activeSelf == false)
         {
             Debug.Log("---CHANGING STATUS---" + _cPanelBool.panelCondition);
 
@@ -49,6 +45,19 @@ public class DeactivateCentrePanelControl : MonoBehaviour
                 item.SetActive(false);
 
             _cPanelBool.panelCondition = true;
+
+        }
+        else if (cPanel.activeSelf == true)
+        {
+            Debug.Log("---CHANGING STATUS---" + _cPanelBool.panelCondition);
+
+            cPanel.gameObject.SetActive(false);
+
+            // Setting all gameobjects in the list to inactive
+            foreach (GameObject item in cPanel_Deactivate)
+                item.SetActive(false);
+
+            _cPanelBool.panelCondition = false;
         }
     }
 }
