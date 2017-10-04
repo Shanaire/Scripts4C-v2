@@ -183,7 +183,7 @@ public class MouseHover : MonoBehaviour
             // SubSection 2
             else if ((tag == "Room4") || (tag == "Room5") || (tag == "Room6"))
             {
-                if (_CameraManagerObject.CameraCount != 1)
+                if (_CameraManagerObject.CameraCount == 10 || _CameraManagerObject.CameraCount == 0)
                 {
                     List<GameObject> RoomFloor = new List<GameObject>
                     {
@@ -525,10 +525,9 @@ public class MouseHover : MonoBehaviour
         }
 
         // Subsection 2 
-        
         else if ((tag == "Room4") || (tag == "Room5") || (tag == "Room6"))
         {
-            if (_CameraManagerObject.CameraCount == 10)
+            if (_CameraManagerObject.CameraCount == 10 || _CameraManagerObject.CameraCount == 0)
             {
                 List<GameObject> RoomFloor = new List<GameObject>
                 {
@@ -536,24 +535,6 @@ public class MouseHover : MonoBehaviour
                     GameObject.FindGameObjectWithTag("Room4"),
                     GameObject.FindGameObjectWithTag("Room5"),
                     GameObject.FindGameObjectWithTag("Room6")
-                };
-
-                Debug.Log("Adding OBJ" + RoomFloor);
-                // Now i'm gonna interate through the list of gameobjects added to the list and change their colors
-
-                foreach (GameObject item in RoomFloor)
-                {
-                    Renderer SubSection1Rooms = item.GetComponent<Renderer>();
-                    SubSection1Rooms.material.color = InitialColor;
-                }
-            }
-            // Room 4
-            else if (_CameraManagerObject.CameraCount == 14)
-            {
-                List<GameObject> RoomFloor = new List<GameObject>
-                {
-                    // Finding all object with the respective tag and add then to a list
-                    GameObject.FindGameObjectWithTag("Room4")
                 };
 
                 Debug.Log("Adding OBJ" + RoomFloor);
