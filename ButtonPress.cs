@@ -16,7 +16,7 @@ public class ButtonPress : MonoBehaviour
     private CameraManager CamMan_1;
 
     // Setting Connection to true when the function is ran
-    private DeactivatePan ConditionTog;
+
     public GameObject FloorPlanPanel;
 
     // Fading script
@@ -29,7 +29,6 @@ public class ButtonPress : MonoBehaviour
     public void Start()
     {
         CamMan_1 = CamSetup.GetComponent<CameraManager>();
-        ConditionTog = FloorPlanPanel.GetComponent<DeactivatePan>();
     }
 
     public void ChangeToRoom()
@@ -43,8 +42,6 @@ public class ButtonPress : MonoBehaviour
             FloorPlanPanel.SetActive(false);
 
             Debug.Log("Change Room Test");
-
-            ConditionTog.condition = false;
         }
         else if (tag == "Room2")
         {
@@ -55,8 +52,6 @@ public class ButtonPress : MonoBehaviour
             FloorPlanPanel.SetActive(false);
 
             Debug.Log("Change Room Test");
-
-            ConditionTog.condition = false;
         }
         else if (tag == "Room3")
         {
@@ -67,8 +62,6 @@ public class ButtonPress : MonoBehaviour
             FloorPlanPanel.SetActive(false);
 
             Debug.Log("Change Room Test");
-
-            ConditionTog.condition = false;
         }
         else if (tag == "Room4")
         {
@@ -79,8 +72,6 @@ public class ButtonPress : MonoBehaviour
             FloorPlanPanel.SetActive(false);
 
             Debug.Log("Change Room Test");
-
-            ConditionTog.condition = false;
         }
         else if (tag == "Room5")
         {
@@ -91,8 +82,6 @@ public class ButtonPress : MonoBehaviour
             FloorPlanPanel.SetActive(false);
 
             Debug.Log("Change Room Test");
-
-            ConditionTog.condition = false;
         }
         else if (tag == "Room6")
         {
@@ -103,8 +92,6 @@ public class ButtonPress : MonoBehaviour
             FloorPlanPanel.SetActive(false);
 
             Debug.Log("Change Room Test");
-
-            ConditionTog.condition = false;
         }
     }
 
