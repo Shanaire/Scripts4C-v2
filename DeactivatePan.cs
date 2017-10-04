@@ -34,13 +34,13 @@ public class DeactivatePan : MonoBehaviour
         {
             Panel_1.SetActive(false);
             condition = false;
-            Debug.Log("____WORKING____");
+            // Debug.Log("____WORKING____");
         }
         else
         {
             if (condition == false)
             {
-                Debug.Log("---CHANGING STATUS---" + condition);
+                // Debug.Log("---CHANGING STATUS---" + condition);
 
                 Panel_1.SetActive(true);
                 condition = true;
@@ -49,7 +49,7 @@ public class DeactivatePan : MonoBehaviour
             }
             else if (condition == true)
             {
-                Debug.Log("---CHANGING STATUS---" + condition);
+                // Debug.Log("---CHANGING STATUS---" + condition);
 
                 Panel_1.SetActive(false);
                 condition = false;

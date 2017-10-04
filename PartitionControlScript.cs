@@ -60,7 +60,7 @@ public class PartitionControlScript : MonoBehaviour
             // Room Nmber 1 - Partition Opened
             if (RoomsWithPartitionClosed[0].activeSelf == true && PartitionCloseContainer[0].activeSelf == true)
             {
-                Debug.Log("TESTING, PARTITION CLOSED");
+                //Debug.Log("TESTING, PARTITION CLOSED");
                 //RoomsWithPartitionClosed[1].SetActive(true);
                 // For each item that is not the same as the item i want activate, make it deactivarted
                 foreach (GameObject item in RoomsWithParittionOpen)
@@ -89,7 +89,7 @@ public class PartitionControlScript : MonoBehaviour
             // Room Nmber 2 - Partition Opened
             if (RoomsWithPartitionClosed[1].activeSelf == true && PartitionCloseContainer[0].activeSelf == true)
             {
-                Debug.Log("TESTING, PARTITION CLOSED");
+                //Debug.Log("TESTING, PARTITION CLOSED");
                 //RoomsWithPartitionClosed[1].SetActive(true);
                 // For each item that is not the same as the item i want activate, make it deactivarted
                 foreach (GameObject item in RoomsWithParittionOpen)
@@ -118,7 +118,7 @@ public class PartitionControlScript : MonoBehaviour
             // Room Nmber 3 - Partition Opened
             if (RoomsWithPartitionClosed[2].activeSelf == true && PartitionCloseContainer[0].activeSelf == true)
             {
-                Debug.Log("TESTING, PARTITION CLOSED");
+                //Debug.Log("TESTING, PARTITION CLOSED");
                 //RoomsWithPartitionClosed[1].SetActive(true);
                 // For each item that is not the same as the item i want activate, make it deactivarted
                 foreach (GameObject item in RoomsWithParittionOpen)
@@ -148,7 +148,7 @@ public class PartitionControlScript : MonoBehaviour
             // Room Nmber 4 - Partition Opened
             if (RoomsWithPartitionClosed[3].activeSelf == true && PartitionCloseContainer[0].activeSelf == true)
             {
-                Debug.Log("TESTING, PARTITION CLOSED");
+                //Debug.Log("TESTING, PARTITION CLOSED");
                 //RoomsWithPartitionClosed[1].SetActive(true);
                 // For each item that is not the same as the item i want activate, make it deactivarted
                 foreach (GameObject item in RoomsWithParittionOpen)
@@ -177,7 +177,7 @@ public class PartitionControlScript : MonoBehaviour
             // Room Nmber 5 - Partition Opened
             if (RoomsWithPartitionClosed[4].activeSelf == true && PartitionCloseContainer[0].activeSelf == true)
             {
-                Debug.Log("TESTING, PARTITION CLOSED");
+                //Debug.Log("TESTING, PARTITION CLOSED");
                 //RoomsWithPartitionClosed[1].SetActive(true);
                 // For each item that is not the same as the item i want activate, make it deactivarted
                 foreach (GameObject item in RoomsWithParittionOpen)
@@ -206,7 +206,7 @@ public class PartitionControlScript : MonoBehaviour
             // Room Nmber 6 - Partition Opened
             if (RoomsWithPartitionClosed[5].activeSelf == true && PartitionCloseContainer[0].activeSelf == true)
             {
-                Debug.Log("TESTING, PARTITION CLOSED");
+                //Debug.Log("TESTING, PARTITION CLOSED");
                 //RoomsWithPartitionClosed[1].SetActive(true);
                 // For each item that is not the same as the item i want activate, make it deactivarted
                 foreach (GameObject item in RoomsWithParittionOpen)
@@ -242,7 +242,7 @@ public class PartitionControlScript : MonoBehaviour
             // Room Nmber 1 - Partition Closed
             if (RoomsWithParittionOpen[0].activeSelf == true && PartitionOpenContrainer[0].activeSelf == true)
             {
-                Debug.Log("TESTING, PARTITION OPENED");
+                //Debug.Log("TESTING, PARTITION OPENED");
                 //RoomsWithPartitionClosed[1].SetActive(true);
                 // For each item that is not the same as the item i want activate, make it deactivarted
                 foreach (GameObject item in RoomsWithPartitionClosed)
@@ -271,7 +271,7 @@ public class PartitionControlScript : MonoBehaviour
             // Room Nmber 2 - Partition Opened
             if (RoomsWithParittionOpen[1].activeSelf == true && PartitionOpenContrainer[0].activeSelf == true)
             {
-                Debug.Log("TESTING, PARTITION OPENED");
+                // Debug.Log("TESTING, PARTITION OPENED");
                 //RoomsWithPartitionClosed[1].SetActive(true);
                 // For each item that is not the same as the item i want activate, make it deactivarted
                 foreach (GameObject item in RoomsWithPartitionClosed)
@@ -300,7 +300,7 @@ public class PartitionControlScript : MonoBehaviour
             // Room Nmber 3 - Partition Closed
             if (RoomsWithParittionOpen[2].activeSelf == true && PartitionOpenContrainer[0].activeSelf == true)
             {
-                Debug.Log("TESTING, PARTITION OPENED");
+                //Debug.Log("TESTING, PARTITION OPENED");
                 //RoomsWithPartitionClosed[1].SetActive(true);
                 // For each item that is not the same as the item i want activate, make it deactivarted
                 foreach (GameObject item in RoomsWithPartitionClosed)
@@ -329,7 +329,7 @@ public class PartitionControlScript : MonoBehaviour
             // Room Nmber 4 - Partition Opened
             if (RoomsWithParittionOpen[3].activeSelf == true && PartitionOpenContrainer[0].activeSelf == true)
             {
-                Debug.Log("TESTING, PARTITION OPENED");
+                // Debug.Log("TESTING, PARTITION OPENED");
                 //RoomsWithPartitionClosed[1].SetActive(true);
                 // For each item that is not the same as the item i want activate, make it deactivarted
                 foreach (GameObject item in RoomsWithPartitionClosed)
@@ -358,7 +358,7 @@ public class PartitionControlScript : MonoBehaviour
             // Room Nmber 5 - Partition Closed
             if (RoomsWithParittionOpen[4].activeSelf == true && PartitionOpenContrainer[0].activeSelf == true)
             {
-                Debug.Log("TESTING, PARTITION OPENED");
+                //Debug.Log("TESTING, PARTITION OPENED");
                 //RoomsWithPartitionClosed[1].SetActive(true);
                 // For each item that is not the same as the item i want activate, make it deactivarted
                 foreach (GameObject item in RoomsWithPartitionClosed)
@@ -387,7 +387,7 @@ public class PartitionControlScript : MonoBehaviour
             // Room Nmber 6 - Partition Closed
             if (RoomsWithParittionOpen[5].activeSelf == true && PartitionOpenContrainer[0].activeSelf == true)
             {
-                Debug.Log("TESTING, PARTITION OPENED");
+                //Debug.Log("TESTING, PARTITION OPENED");
                 //RoomsWithPartitionClosed[1].SetActive(true);
                 // For each item that is not the same as the item i want activate, make it deactivarted
                 foreach (GameObject item in RoomsWithPartitionClosed)

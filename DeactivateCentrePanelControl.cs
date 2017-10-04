@@ -36,7 +36,7 @@ public class DeactivateCentrePanelControl : MonoBehaviour
         // This cPanel is if the gameObject is active, rather than the script
         if (cPanel.activeSelf == false)
         {
-            Debug.Log("---CHANGING STATUS---" + _cPanelBool.panelCondition);
+            //Debug.Log("---CHANGING STATUS---" + _cPanelBool.panelCondition);
 
             cPanel.gameObject.SetActive(true);
 
@@ -49,7 +49,7 @@ public class DeactivateCentrePanelControl : MonoBehaviour
         }
         else if (cPanel.activeSelf == true)
         {
-            Debug.Log("---CHANGING STATUS---" + _cPanelBool.panelCondition);
+            //Debug.Log("---CHANGING STATUS---" + _cPanelBool.panelCondition);
 
             cPanel.gameObject.SetActive(false);
 

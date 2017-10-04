@@ -16,7 +16,7 @@ public class TitleandTextController : MonoBehaviour
 
     //_______________________________________________________________________________//
 
-    public List<GameObject> TitlePanel =  new List<GameObject>();
+    public List<GameObject> TitlePanel = new List<GameObject>();
     private GameObject _TitlePanel;
 
     private void Update()
@@ -26,7 +26,7 @@ public class TitleandTextController : MonoBehaviour
 
     void TitleTrigger()
     {
-        Debug.Log("This is title trigger");
+        //Debug.Log("This is title trigger");
 
         // Starting Camera 
         if (CamManager.CameraCount == 1)

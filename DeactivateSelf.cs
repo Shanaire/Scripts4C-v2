@@ -12,25 +12,19 @@ public class DeactivateSelf : MonoBehaviour
 
     private bool condition = true || false;
 
-
-    public void Update()
-    {
-
-    }
-
     public void TogglePanel()
     {
 
         if (condition == true)
         {
-            Debug.Log("---STATUS TRUE---" + condition);
+            //Debug.Log("---STATUS TRUE---" + condition);
 
             Button.SetActive(true);
             condition = false;
         }
         else if (condition == false)
         {
-            Debug.Log("---STATUS False---" + condition);
+            //Debug.Log("---STATUS False---" + condition);
             Button.SetActive(false);
             condition = true;
         }

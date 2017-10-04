@@ -47,7 +47,7 @@ public class CameraManager : MonoBehaviour
     // Camera and initial camera empty position
     public GameObject MainCam; public GameObject MainCam_INS;
     public Transform InitialCamPosition;
-    
+
     // Camera Component Reference
     private Camera ActiveCamera;
     //private Transform CurrentTransform;
@@ -72,7 +72,7 @@ public class CameraManager : MonoBehaviour
     {
         // Initializing the Active Camera as the main camera
         ActiveCamera = MainCam.GetComponent<Camera>();
-        
+
         // Initializing the Transformation of the current transform
         //CurrentTransform = MainCam.GetComponent<Transform>();
     }
@@ -203,10 +203,10 @@ public class CameraManager : MonoBehaviour
             // Disabling the camera transition
             // SubCam_[0].transform.position = new Vector3(MainCam.transform.position.x, MainCam.transform.position.y, MainCam.transform.position.z);
 
-           
+
             // Making the Previous Camera equalling the active camera before disabling it, so that the back function can work
             PrevCamCount = 1;
-            
+
             // Deactivating the Current Camera
             ActiveCamera.enabled = false;
 
@@ -231,10 +231,10 @@ public class CameraManager : MonoBehaviour
             // SubCam_[1].transform.position = new Vector3(MainCam.transform.position.x, MainCam.transform.position.y, MainCam.transform.position.z);
 
             // Making the Previous Camera equalling the active camera before disabling it, so that the back function can work
-            Debug.Log("Prev Camera  = " + ActiveCamera);
+            // Debug.Log("Prev Camera  = " + ActiveCamera);
             PrevCamCount = 10;
             // Deactivating the Current Camera
-           ActiveCamera.enabled = false;
+            ActiveCamera.enabled = false;
 
             // Switching the Current Camera to a Sub Camera
             MainCam = SubCams[1];
@@ -244,7 +244,7 @@ public class CameraManager : MonoBehaviour
                 // Then re-assign MainCam Camera component to the new MainCam, which is the switched camera and then Set it to Active
                 ActiveCamera = MainCam.GetComponent<Camera>();
                 ActiveCamera.enabled = true;
-                Debug.Log("Current Active Camera  = " + ActiveCamera);
+                // Debug.Log("Current Active Camera  = " + ActiveCamera);
                 // Number to activate the point transition
                 TransitionCode = 2;
             }
@@ -367,7 +367,7 @@ public class CameraManager : MonoBehaviour
                 // Then re-assign MainCam Camera component to the new MainCam, which is the switched camera and then Set it to Active
                 ActiveCamera = MainCam.GetComponent<Camera>();
                 ActiveCamera.enabled = true;
-                Debug.Log("ActiveCam_2" + ActiveCamera);
+                // Debug.Log("ActiveCam_2" + ActiveCamera);
                 // Number to activate the point transition
                 TransitionCode = 14;
             }
@@ -485,11 +485,11 @@ public class CameraManager : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Condition Status" + BoolForCenPan.panelCondition);
+            // Debug.Log("Condition Status" + BoolForCenPan.panelCondition);
             if (BoolForCenPan.panelCondition == true)
             {
                 Physics.Raycast(RayToObject, 0f);
-                Debug.Log("Checking");
+                // Debug.Log("Checking");
             }
 
             else if (BoolForCenPan.panelCondition == false)
@@ -614,7 +614,7 @@ public class CameraManager : MonoBehaviour
 
                     else
                     {
-                        Debug.Log("Nothing Clicked");
+                        // Debug.Log("Nothing Clicked");
                     }
 
                 }
@@ -624,10 +624,10 @@ public class CameraManager : MonoBehaviour
     // This is going to be a revse transition back to the main camera's initial position
     public void ReverseTransition()
     {
-        Debug.Log("Reverse Starting");
+        // Debug.Log("Reverse Starting");
         // Create a variable to hold the previous camera position
 
-        Debug.Log("Using the previous cam count" + PrevCamCount);
+        // Debug.Log("Using the previous cam count" + PrevCamCount);
 
         // Fading Camera
         FadeToCam.RoomFadeOUT();
@@ -643,7 +643,7 @@ public class CameraManager : MonoBehaviour
 
         // Setting this bool condition back to false to enable raycasting from this script
         BoolForCenPan.panelCondition = false;
-        Debug.Log("Reverse ending");
+        // Debug.Log("Reverse ending");
     }
 }
 

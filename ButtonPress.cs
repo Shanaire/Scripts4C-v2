@@ -41,7 +41,7 @@ public class ButtonPress : MonoBehaviour
             FadeToCam.RoomFadeIN();
             FloorPlanPanel.SetActive(false);
 
-            Debug.Log("Change Room Test");
+            //Debug.Log("Change Room Test");
         }
         else if (tag == "Room2")
         {
@@ -51,7 +51,7 @@ public class ButtonPress : MonoBehaviour
             FadeToCam.RoomFadeIN();
             FloorPlanPanel.SetActive(false);
 
-            Debug.Log("Change Room Test");
+            //Debug.Log("Change Room Test");
         }
         else if (tag == "Room3")
         {
@@ -61,7 +61,7 @@ public class ButtonPress : MonoBehaviour
             FadeToCam.RoomFadeIN();
             FloorPlanPanel.SetActive(false);
 
-            Debug.Log("Change Room Test");
+            //Debug.Log("Change Room Test");
         }
         else if (tag == "Room4")
         {
@@ -71,7 +71,7 @@ public class ButtonPress : MonoBehaviour
             FadeToCam.RoomFadeIN();
             FloorPlanPanel.SetActive(false);
 
-            Debug.Log("Change Room Test");
+            //Debug.Log("Change Room Test");
         }
         else if (tag == "Room5")
         {
@@ -81,7 +81,7 @@ public class ButtonPress : MonoBehaviour
             FadeToCam.RoomFadeIN();
             FloorPlanPanel.SetActive(false);
 
-            Debug.Log("Change Room Test");
+            // Debug.Log("Change Room Test");
         }
         else if (tag == "Room6")
         {
@@ -91,7 +91,7 @@ public class ButtonPress : MonoBehaviour
             FadeToCam.RoomFadeIN();
             FloorPlanPanel.SetActive(false);
 
-            Debug.Log("Change Room Test");
+            // Debug.Log("Change Room Test");
         }
     }
 

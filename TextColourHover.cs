@@ -4,13 +4,13 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Button))]
-    public class TextColourHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler
+public class TextColourHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler
 {
     /* 
      * This script is to be used to change the colour of the text that is attacted to a button so that the colour of the text matches that of the button when hovering / highlighting.
      * 
      */
-    
+
     // creating a varibale to hold the text cpomponent
     Text txt;
     // creating a variable to hold the base color

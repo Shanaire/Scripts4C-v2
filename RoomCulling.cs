@@ -10,7 +10,6 @@ public class RoomCulling : MonoBehaviour
      * */
 
     // Main Camera object and camera component
-    [Tooltip("Main Camera in Scene")]
     public GameObject MainCam;
     private Camera MainCam_;
     private List<GameObject> RoomCol = new List<GameObject>(); // A list of Gameobject to collect the rooms.
@@ -93,7 +92,7 @@ public class RoomCulling : MonoBehaviour
 
         MainCamFunc();
 
-        Debug.Log(MainCam_.enabled);
+        //Debug.Log(MainCam_.enabled);
 
         StateChanged();
     }
@@ -108,57 +107,57 @@ public class RoomCulling : MonoBehaviour
         if (MainCam_.enabled == true)
         {
             CameraCount = 1;
-            Debug.Log("CameraCount " + CameraCount);
+            // Debug.Log("CameraCount " + CameraCount);
         }
         else if (SubCam_1.enabled == true)
         {
             CameraCount = 2;
-            Debug.Log("CameraCount " + CameraCount);
+            // Debug.Log("CameraCount " + CameraCount);
         }
         else if (SubCam_2.enabled == true)
         {
             CameraCount = 3;
-            Debug.Log("CameraCount " + CameraCount);
+            // Debug.Log("CameraCount " + CameraCount);
         }
         else if (SubCam_3.enabled == true)
         {
             CameraCount = 4;
-            Debug.Log("CameraCount " + CameraCount);
+            // Debug.Log("CameraCount " + CameraCount);
         }
         else if (Room1_Cam.enabled == true)
         {
             CameraCount = 5;
-            Debug.Log("CameraCount " + CameraCount);
+            // Debug.Log("CameraCount " + CameraCount);
         }
         else if (Room2_Cam.enabled == true)
         {
             CameraCount = 6;
-            Debug.Log("CameraCount " + CameraCount);
+            //Debug.Log("CameraCount " + CameraCount);
         }
         else if (Room3_Cam.enabled == true)
         {
             CameraCount = 7;
-            Debug.Log("CameraCount " + CameraCount);
+            // Debug.Log("CameraCount " + CameraCount);
         }
         else if (Room4_Cam.enabled == true)
         {
             CameraCount = 8;
-            Debug.Log("CameraCount " + CameraCount);
+            // Debug.Log("CameraCount " + CameraCount);
         }
         else if (Room5_Cam.enabled == true)
         {
             CameraCount = 9;
-            Debug.Log("CameraCount " + CameraCount);
+            // Debug.Log("CameraCount " + CameraCount);
         }
         else if (Room6_Cam.enabled == true)
         {
             CameraCount = 10;
-            Debug.Log("CameraCount " + CameraCount);
+            // Debug.Log("CameraCount " + CameraCount);
         }
         else if (Room7_Cam.enabled == true)
         {
             CameraCount = 11;
-            Debug.Log("CameraCount " + CameraCount);
+            // Debug.Log("CameraCount " + CameraCount);
         }
     }
 
@@ -256,7 +255,7 @@ public class RoomCulling : MonoBehaviour
         if (CameraCount == 1)
         {
             CountListItems = 0;
-            Debug.Log("Testing _1");
+            //  Debug.Log("Testing _1");
 
             // Looping through each iteration of RoomCol and adding 1 to the counter and setting the items to active, then when 
             //RoomCol == Counter, use transition camera function, to transition back to the main camera position 
@@ -281,7 +280,7 @@ public class RoomCulling : MonoBehaviour
         // Subsection 1
         else if (CameraCount == 2)
         {
-            Debug.Log("Testing _2");
+            //  Debug.Log("Testing _2");
             foreach (GameObject item in Room1_cGroup)
             {
                 item.SetActive(true);
@@ -321,7 +320,7 @@ public class RoomCulling : MonoBehaviour
         // Subsection 2
         else if (CameraCount == 3)
         {
-            Debug.Log("Testing _1");
+            //  Debug.Log("Testing _1");
             foreach (GameObject item in Room1_cGroup)
             {
                 item.SetActive(false);
@@ -361,7 +360,7 @@ public class RoomCulling : MonoBehaviour
         // Subsection 3
         else if (CameraCount == 4)
         {
-            Debug.Log("Testing _1");
+            //  Debug.Log("Testing _1");
             foreach (GameObject item in Room1_cGroup)
             {
                 item.SetActive(true);
@@ -401,7 +400,7 @@ public class RoomCulling : MonoBehaviour
         // Room1
         else if (CameraCount == 5)
         {
-            Debug.Log("Testing _1");
+            // Debug.Log("Testing _1");
             foreach (GameObject item in Room1_cGroup)
             {
                 item.SetActive(true);
@@ -441,7 +440,7 @@ public class RoomCulling : MonoBehaviour
         // Room 2
         else if (CameraCount == 6)
         {
-            Debug.Log("Testing _1");
+            // Debug.Log("Testing _1");
             foreach (GameObject item in Room1_cGroup)
             {
                 item.SetActive(false);
@@ -480,7 +479,7 @@ public class RoomCulling : MonoBehaviour
         // Room 3
         else if (CameraCount == 7)
         {
-            Debug.Log("Testing _1");
+            // Debug.Log("Testing _1");
             foreach (GameObject item in Room1_cGroup)
             {
                 item.SetActive(false);
@@ -519,7 +518,7 @@ public class RoomCulling : MonoBehaviour
         // Room4
         else if (CameraCount == 8)
         {
-            Debug.Log("Testing _1");
+            // Debug.Log("Testing _1");
             foreach (GameObject item in Room1_cGroup)
             {
                 item.SetActive(false);
@@ -558,7 +557,7 @@ public class RoomCulling : MonoBehaviour
         // Room5
         else if (CameraCount == 9)
         {
-            Debug.Log("Testing _1");
+            // Debug.Log("Testing _1");
             foreach (GameObject item in Room1_cGroup)
             {
                 item.SetActive(false);
@@ -597,7 +596,7 @@ public class RoomCulling : MonoBehaviour
         // Room 6
         else if (CameraCount == 10)
         {
-            Debug.Log("Testing _1");
+            // Debug.Log("Testing _1");
             foreach (GameObject item in Room1_cGroup)
             {
                 item.SetActive(false);
@@ -636,7 +635,7 @@ public class RoomCulling : MonoBehaviour
         // Room 7
         else if (CameraCount == 11)
         {
-            Debug.Log("Testing _1");
+            // Debug.Log("Testing _1");
             foreach (GameObject item in Room1_cGroup)
             {
                 item.SetActive(false);

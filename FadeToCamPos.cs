@@ -61,13 +61,13 @@ public class FadeToCamPos : MonoBehaviour
 
     public void RoomFadeOUT()
     {
-        Debug.Log("Fading Transition");
+       // Debug.Log("Fading Transition");
         Fade(true, 1f);
     }
 
     public void RoomFadeIN()
     {
-        Debug.Log("Fading Transition");
+       // Debug.Log("Fading Transition");
         Fade(false, .5f);
     }
 

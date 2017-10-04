@@ -26,7 +26,7 @@ public class Deactivate : MonoBehaviour
 
         if (condition == false)
         {
-            Debug.Log("---CHANGING STATUS---" + condition);
+           // Debug.Log("---CHANGING STATUS---" + condition);
 
             Button.SetActive(false);
             Title.SetActive(false);
@@ -34,7 +34,7 @@ public class Deactivate : MonoBehaviour
         }
         else if (condition == true)
         {
-            Debug.Log("---CHANGING STATUS---" + condition);
+           // Debug.Log("---CHANGING STATUS---" + condition);
 
             Button.SetActive(true);
             Title.SetActive(true);

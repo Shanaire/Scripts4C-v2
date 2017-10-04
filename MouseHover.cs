@@ -79,8 +79,8 @@ public class MouseHover : MonoBehaviour
                         { v = 1.2f; }
 
                         Selected = Color.HSVToRGB(h, s, v);
-                        Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
-                        Debug.Log("Section 1 Hover");
+                      //  Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
+                      //  Debug.Log("Section 1 Hover");
                     }
                 }
                 else
@@ -93,8 +93,8 @@ public class MouseHover : MonoBehaviour
                     { v = 1.2f; }
 
                     Selected = Color.HSVToRGB(h, s, v);
-                    Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
-                    Debug.Log("Section 1 Hover");
+                  //  Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
+                  //  Debug.Log("Section 1 Hover");
                 }
             }
             // Room 2
@@ -120,8 +120,8 @@ public class MouseHover : MonoBehaviour
                         { v = 1.2f; }
 
                         Selected = Color.HSVToRGB(h, s, v);
-                        Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
-                        Debug.Log("Section 1 Hover");
+                      //  Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
+                      //  Debug.Log("Section 1 Hover");
                     }
                 }
                 else
@@ -134,8 +134,8 @@ public class MouseHover : MonoBehaviour
                     { v = 1.2f; }
 
                     Selected = Color.HSVToRGB(h, s, v);
-                    Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
-                    Debug.Log("Section 1 Hover");
+                  //  Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
+                  //  Debug.Log("Section 1 Hover");
                 }
             }
             // Room 3
@@ -161,8 +161,8 @@ public class MouseHover : MonoBehaviour
                         { v = 1.2f; }
 
                         Selected = Color.HSVToRGB(h, s, v);
-                        Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
-                        Debug.Log("Section 1 Hover");
+                       // Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
+                      //  Debug.Log("Section 1 Hover");
                     }
                 }
                 else
@@ -175,8 +175,8 @@ public class MouseHover : MonoBehaviour
                     { v = 1.2f; }
 
                     Selected = Color.HSVToRGB(h, s, v);
-                    Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
-                    Debug.Log("Section 1 Hover");
+                   // Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
+                  //  Debug.Log("Section 1 Hover");
                 }
             }
 
@@ -205,8 +205,8 @@ public class MouseHover : MonoBehaviour
                         { v = 1.2f; }
 
                         Selected = Color.HSVToRGB(h, s, v);
-                        Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
-                        Debug.Log("Section 1 Hover");
+                      //  Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
+                      //  Debug.Log("Section 1 Hover");
                     }
                 }
                 else
@@ -219,8 +219,8 @@ public class MouseHover : MonoBehaviour
                     { v = 1.2f; }
 
                     Selected = Color.HSVToRGB(h, s, v);
-                    Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
-                    Debug.Log("Section 1 Hover");
+                   // Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
+                   // Debug.Log("Section 1 Hover");
                 }
             }
 
@@ -247,8 +247,8 @@ public class MouseHover : MonoBehaviour
                         { v = 1.2f; }
 
                         Selected = Color.HSVToRGB(h, s, v);
-                        Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
-                        Debug.Log("Section 1 Hover");
+                       // Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
+                       // Debug.Log("Section 1 Hover");
                     }
                 }
                 else
@@ -261,8 +261,8 @@ public class MouseHover : MonoBehaviour
                     { v = 1.2f; }
 
                     Selected = Color.HSVToRGB(h, s, v);
-                    Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
-                    Debug.Log("Section 1 Hover");
+                  //  Debug.LogFormat("Starting Render Color OVR {0}", InitialColor);
+                  //  Debug.Log("Section 1 Hover");
                 }
             }
         }
@@ -458,7 +458,7 @@ public class MouseHover : MonoBehaviour
                     GameObject.FindGameObjectWithTag("Room1")
                 };
 
-                Debug.Log("Adding OBJ" + RoomFloor);
+               // Debug.Log("Adding OBJ" + RoomFloor);
                 // Now i'm gonna interate through the list of gameobjects added to the list and change their colors
 
                 foreach (GameObject item in RoomFloor)
@@ -484,7 +484,7 @@ public class MouseHover : MonoBehaviour
 
                 };
 
-                Debug.Log("Adding OBJ" + RoomFloor);
+               // Debug.Log("Adding OBJ" + RoomFloor);
                 // Now i'm gonna interate through the list of gameobjects added to the list and change their colors
 
                 foreach (GameObject item in RoomFloor)
@@ -509,7 +509,7 @@ public class MouseHover : MonoBehaviour
                     GameObject.FindGameObjectWithTag("Room3")
                 };
 
-                Debug.Log("Adding OBJ" + RoomFloor);
+               // Debug.Log("Adding OBJ" + RoomFloor);
                 // Now i'm gonna interate through the list of gameobjects added to the list and change their colors
 
                 foreach (GameObject item in RoomFloor)
@@ -537,7 +537,7 @@ public class MouseHover : MonoBehaviour
                     GameObject.FindGameObjectWithTag("Room6")
                 };
 
-                Debug.Log("Adding OBJ" + RoomFloor);
+               // Debug.Log("Adding OBJ" + RoomFloor);
                 // Now i'm gonna interate through the list of gameobjects added to the list and change their colors
 
                 foreach (GameObject item in RoomFloor)
@@ -563,7 +563,7 @@ public class MouseHover : MonoBehaviour
                     GameObject.FindGameObjectWithTag("Room7")
                 };
 
-                Debug.Log("Adding OBJ" + RoomFloor);
+               // Debug.Log("Adding OBJ" + RoomFloor);
                 // Now i'm gonna interate through the list of gameobjects added to the list and change their colors
 
                 foreach (GameObject item in RoomFloor)

@@ -13,7 +13,7 @@ public class DoorControllerDeAct : MonoBehaviour
 
     public CameraManager CamManager;
 
-        //____________________________________________________________________________________________________//
+    //____________________________________________________________________________________________________//
 
 
 
@@ -49,7 +49,7 @@ public class DoorControllerDeAct : MonoBehaviour
 
     void ConditionTruePartition()
     {
-        Debug.Log("---CHANGING STATUS---" + condition);
+        //Debug.Log("---CHANGING STATUS---" + condition);
 
         foreach (GameObject item in WithPartitionElements)
             item.SetActive(true);
@@ -60,7 +60,7 @@ public class DoorControllerDeAct : MonoBehaviour
 
     void ConditionFalsePartition()
     {
-        Debug.Log("---CHANGING STATUS---" + condition);
+        //Debug.Log("---CHANGING STATUS---" + condition);
 
         // Setting all gameobjects in the list to inactive
 
@@ -79,7 +79,7 @@ public class DoorControllerDeAct : MonoBehaviour
         {
             this.GetComponent<Animator>().SetTrigger("open");
             partitionOpen = false;
-            Debug.Log(partitionOpen);
+            //Debug.Log(partitionOpen);
 
             // Add a delay timer here so that the animation finishes before ,making the room elements become active.
 
@@ -97,7 +97,7 @@ public class DoorControllerDeAct : MonoBehaviour
         {
             this.GetComponent<Animator>().SetTrigger("closed");
             partitionOpen = true;
-            Debug.Log(partitionOpen);
+            //Debug.Log(partitionOpen);
 
             // Add a delay timer here so that the animation finishes before ,making the room elements become active.
 
