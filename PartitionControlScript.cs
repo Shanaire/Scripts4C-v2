@@ -203,7 +203,35 @@ public class PartitionControlScript : MonoBehaviour
                     }
                 }
             }
-
+            // Room Nmber 6 - Partition Opened
+            if (RoomsWithPartitionClosed[5].activeSelf == true && PartitionCloseContainer[0].activeSelf == true)
+            {
+                Debug.Log("TESTING, PARTITION CLOSED");
+                //RoomsWithPartitionClosed[1].SetActive(true);
+                // For each item that is not the same as the item i want activate, make it deactivarted
+                foreach (GameObject item in RoomsWithParittionOpen)
+                {
+                    if (item != RoomsWithParittionOpen[5])
+                    {
+                        item.SetActive(false);
+                    }
+                    else
+                    {
+                        item.SetActive(true);
+                    }
+                }
+                foreach (GameObject item in RoomsWithPartitionOpenText)
+                {
+                    if (item != RoomsWithPartitionOpenText[5])
+                    {
+                        item.SetActive(false);
+                    }
+                    else
+                    {
+                        item.SetActive(true);
+                    }
+                }
+            }
 
 
 
@@ -269,7 +297,7 @@ public class PartitionControlScript : MonoBehaviour
                     }
                 }
             }
-            // Room Nmber 1 - Partition Closed
+            // Room Nmber 3 - Partition Closed
             if (RoomsWithParittionOpen[2].activeSelf == true && PartitionOpenContrainer[0].activeSelf == true)
             {
                 Debug.Log("TESTING, PARTITION OPENED");
@@ -298,7 +326,7 @@ public class PartitionControlScript : MonoBehaviour
                     }
                 }
             }
-            // Room Nmber 2 - Partition Opened
+            // Room Nmber 4 - Partition Opened
             if (RoomsWithParittionOpen[3].activeSelf == true && PartitionOpenContrainer[0].activeSelf == true)
             {
                 Debug.Log("TESTING, PARTITION OPENED");
@@ -327,7 +355,7 @@ public class PartitionControlScript : MonoBehaviour
                     }
                 }
             }
-            // Room Nmber 1 - Partition Closed
+            // Room Nmber 5 - Partition Closed
             if (RoomsWithParittionOpen[4].activeSelf == true && PartitionOpenContrainer[0].activeSelf == true)
             {
                 Debug.Log("TESTING, PARTITION OPENED");
@@ -347,6 +375,35 @@ public class PartitionControlScript : MonoBehaviour
                 foreach (GameObject item in RoomsWithPartitionClosedText)
                 {
                     if (item != RoomsWithPartitionClosedText[4])
+                    {
+                        item.SetActive(false);
+                    }
+                    else
+                    {
+                        item.SetActive(true);
+                    }
+                }
+            }
+            // Room Nmber 6 - Partition Closed
+            if (RoomsWithParittionOpen[5].activeSelf == true && PartitionOpenContrainer[0].activeSelf == true)
+            {
+                Debug.Log("TESTING, PARTITION OPENED");
+                //RoomsWithPartitionClosed[1].SetActive(true);
+                // For each item that is not the same as the item i want activate, make it deactivarted
+                foreach (GameObject item in RoomsWithPartitionClosed)
+                {
+                    if (item != RoomsWithPartitionClosed[5])
+                    {
+                        item.SetActive(false);
+                    }
+                    else
+                    {
+                        item.SetActive(true);
+                    }
+                }
+                foreach (GameObject item in RoomsWithPartitionClosedText)
+                {
+                    if (item != RoomsWithPartitionClosedText[5])
                     {
                         item.SetActive(false);
                     }
