@@ -50,7 +50,7 @@ public class CameraManager : MonoBehaviour
     
     // Camera Component Reference
     private Camera ActiveCamera;
-    private Transform CurrentTransform;
+    //private Transform CurrentTransform;
 
     public int CameraCount = 0;
     public int TransitionCode = 0;
@@ -74,7 +74,7 @@ public class CameraManager : MonoBehaviour
         ActiveCamera = MainCam.GetComponent<Camera>();
         
         // Initializing the Transformation of the current transform
-        CurrentTransform = MainCam.GetComponent<Transform>();
+        //CurrentTransform = MainCam.GetComponent<Transform>();
     }
 
     public void Update()
