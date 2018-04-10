@@ -89,11 +89,7 @@ public class RoomCulling : MonoBehaviour
     private void Update()
     {
         CamMan.RayCasting();
-
         MainCamFunc();
-
-        //Debug.Log(MainCam_.enabled);
-
         StateChanged();
     }
 
@@ -107,57 +103,46 @@ public class RoomCulling : MonoBehaviour
         if (MainCam_.enabled == true)
         {
             CameraCount = 1;
-            // Debug.Log("CameraCount " + CameraCount);
         }
         else if (SubCam_1.enabled == true)
         {
             CameraCount = 2;
-            // Debug.Log("CameraCount " + CameraCount);
         }
         else if (SubCam_2.enabled == true)
         {
             CameraCount = 3;
-            // Debug.Log("CameraCount " + CameraCount);
         }
         else if (SubCam_3.enabled == true)
         {
             CameraCount = 4;
-            // Debug.Log("CameraCount " + CameraCount);
         }
         else if (Room1_Cam.enabled == true)
         {
             CameraCount = 5;
-            // Debug.Log("CameraCount " + CameraCount);
         }
         else if (Room2_Cam.enabled == true)
         {
             CameraCount = 6;
-            //Debug.Log("CameraCount " + CameraCount);
         }
         else if (Room3_Cam.enabled == true)
         {
             CameraCount = 7;
-            // Debug.Log("CameraCount " + CameraCount);
         }
         else if (Room4_Cam.enabled == true)
         {
             CameraCount = 8;
-            // Debug.Log("CameraCount " + CameraCount);
         }
         else if (Room5_Cam.enabled == true)
         {
             CameraCount = 9;
-            // Debug.Log("CameraCount " + CameraCount);
         }
         else if (Room6_Cam.enabled == true)
         {
             CameraCount = 10;
-            // Debug.Log("CameraCount " + CameraCount);
         }
         else if (Room7_Cam.enabled == true)
         {
             CameraCount = 11;
-            // Debug.Log("CameraCount " + CameraCount);
         }
     }
 
@@ -254,33 +239,23 @@ public class RoomCulling : MonoBehaviour
 
         if (CameraCount == 1)
         {
-            CountListItems = 0;
-            //  Debug.Log("Testing _1");
-
             // Looping through each iteration of RoomCol and adding 1 to the counter and setting the items to active, then when 
-            //RoomCol == Counter, use transition camera function, to transition back to the main camera position 
+            // RoomCol == Counter, use transition camera function, to transition back to the main camera position 
+
+            CountListItems = 0;
+
             foreach (GameObject item in RoomCol)
             {
                 item.SetActive(true);
                 CountListItems += 1;
-
-                //Debug.Log("RoomCol.Count = " + RoomCol.Count);
-                //Debug.Log("CountListItems = " + CountListItems);
-
-                if (CountListItems == RoomCol.Count)
-                {
-                    if (CamMan.TransitionCode == 10)
-                    {
-                        CamMan.CameraTransition();
-                    }
-                }
-
             }
         }
+
+        #region SUB_SECTIONS
+
         // Subsection 1
         else if (CameraCount == 2)
         {
-            //  Debug.Log("Testing _2");
             foreach (GameObject item in Room1_cGroup)
             {
                 item.SetActive(true);
@@ -297,7 +272,6 @@ public class RoomCulling : MonoBehaviour
             {
                 item.SetActive(false);
             }
-
             foreach (GameObject item in Room5_cGroup)
             {
                 item.SetActive(false);
@@ -314,13 +288,10 @@ public class RoomCulling : MonoBehaviour
             {
                 item.SetActive(false);
             }
-
-            CamMan.CameraTransition();
         }
         // Subsection 2
         else if (CameraCount == 3)
         {
-            //  Debug.Log("Testing _1");
             foreach (GameObject item in Room1_cGroup)
             {
                 item.SetActive(false);
@@ -353,14 +324,10 @@ public class RoomCulling : MonoBehaviour
             {
                 item.SetActive(false);
             }
-
-            CamMan.CameraTransition();
-
         }
         // Subsection 3
         else if (CameraCount == 4)
         {
-            //  Debug.Log("Testing _1");
             foreach (GameObject item in Room1_cGroup)
             {
                 item.SetActive(true);
@@ -394,13 +361,12 @@ public class RoomCulling : MonoBehaviour
                 item.SetActive(false);
             }
 
-            CamMan.CameraTransition();
+        } 
+        #endregion
 
-        }
         // Room1
         else if (CameraCount == 5)
         {
-            // Debug.Log("Testing _1");
             foreach (GameObject item in Room1_cGroup)
             {
                 item.SetActive(true);
@@ -433,14 +399,10 @@ public class RoomCulling : MonoBehaviour
             {
                 item.SetActive(false);
             }
-
-            CamMan.CameraTransition();
-
         }
         // Room 2
         else if (CameraCount == 6)
         {
-            // Debug.Log("Testing _1");
             foreach (GameObject item in Room1_cGroup)
             {
                 item.SetActive(false);
@@ -473,13 +435,10 @@ public class RoomCulling : MonoBehaviour
             {
                 item.SetActive(false);
             }
-            CamMan.CameraTransition();
-
         }
         // Room 3
         else if (CameraCount == 7)
         {
-            // Debug.Log("Testing _1");
             foreach (GameObject item in Room1_cGroup)
             {
                 item.SetActive(false);
@@ -512,13 +471,10 @@ public class RoomCulling : MonoBehaviour
             {
                 item.SetActive(false);
             }
-            CamMan.CameraTransition();
-
         }
         // Room4
         else if (CameraCount == 8)
         {
-            // Debug.Log("Testing _1");
             foreach (GameObject item in Room1_cGroup)
             {
                 item.SetActive(false);
@@ -551,13 +507,10 @@ public class RoomCulling : MonoBehaviour
             {
                 item.SetActive(false);
             }
-
-            CamMan.CameraTransition();
         }
         // Room5
         else if (CameraCount == 9)
         {
-            // Debug.Log("Testing _1");
             foreach (GameObject item in Room1_cGroup)
             {
                 item.SetActive(false);
@@ -590,89 +543,58 @@ public class RoomCulling : MonoBehaviour
             {
                 item.SetActive(false);
             }
-
-            CamMan.CameraTransition();
         }
         // Room 6
         else if (CameraCount == 10)
         {
-            // Debug.Log("Testing _1");
-            foreach (GameObject item in Room1_cGroup)
-            {
-                item.SetActive(false);
-            }
-            foreach (GameObject item in Room2_cGroup)
-            {
-                item.SetActive(false);
-            }
-            foreach (GameObject item in Room3_cGroup)
-            {
-                item.SetActive(false);
-            }
-            foreach (GameObject item in Room4_cGroup)
-            {
-                item.SetActive(false);
-            }
-            foreach (GameObject item in Room5_cGroup)
-            {
-                item.SetActive(false);
-            }
-            foreach (GameObject item in Room6_cGroup)
-            {
-                item.SetActive(true);
-            }
-            foreach (GameObject item in Room7_cGroup)
-            {
-                item.SetActive(false);
-            }
-            foreach (GameObject item in Other_cGroup)
-            {
-                item.SetActive(false);
-            }
+            CullingGroups(Room1_cGroup, false, Room2_cGroup, false, Room3_cGroup, false, Room4_cGroup, false,
+                Room5_cGroup, false, Room6_cGroup, true, Room7_cGroup, true, Other_cGroup, false);
 
-            CamMan.CameraTransition();
         }
         // Room 7
         else if (CameraCount == 11)
         {
-            // Debug.Log("Testing _1");
-            foreach (GameObject item in Room1_cGroup)
-            {
-                item.SetActive(false);
-            }
-            foreach (GameObject item in Room2_cGroup)
-            {
-                item.SetActive(false);
-            }
-            foreach (GameObject item in Room3_cGroup)
-            {
-                item.SetActive(false);
-            }
-            foreach (GameObject item in Room4_cGroup)
-            {
-                item.SetActive(false);
-            }
-            foreach (GameObject item in Room5_cGroup)
-            {
-                item.SetActive(false);
-            }
-            foreach (GameObject item in Room6_cGroup)
-            {
-                item.SetActive(false);
-            }
-            foreach (GameObject item in Room7_cGroup)
-            {
-                item.SetActive(true);
-            }
-            foreach (GameObject item in Other_cGroup)
-            {
-                item.SetActive(false);
-            }
-
-            CamMan.CameraTransition();
-
+            CullingGroups(Room1_cGroup, false, Room2_cGroup, false, Room3_cGroup,false, Room4_cGroup,false, 
+                            Room5_cGroup,false, Room6_cGroup,false, Room7_cGroup,true, Other_cGroup,false);
         }
-
     }
 
+    private void CullingGroups(List<GameObject> Room1_Group, bool Room1_State, List<GameObject> Room2_Group, bool Room2_State, 
+                                List<GameObject> Room3_Group, bool Room3_State, List<GameObject> Room4_Group, bool Room4_State,
+                                List<GameObject> Room5_Group, bool Room5_State, List<GameObject> Room6_Group, bool Room6_State, 
+                                List<GameObject> Room7_Group, bool Room7_State, List<GameObject> Other_Group, bool Other_State)
+    {
+        foreach (GameObject item in Room1_Group)
+        {
+            item.SetActive(Room1_State);
+        }
+        foreach (GameObject item in Room2_Group)
+        {
+            item.SetActive(Room2_State);
+        }
+        foreach (GameObject item in Room3_Group)
+        {
+            item.SetActive(Room3_State);
+        }
+        foreach (GameObject item in Room4_Group)
+        {
+            item.SetActive(Room4_State);
+        }
+        foreach (GameObject item in Room5_Group)
+        {
+            item.SetActive(Room5_State);
+        }
+        foreach (GameObject item in Room6_Group)
+        {
+            item.SetActive(Room6_State);
+        }
+        foreach (GameObject item in Room7_Group)
+        {
+            item.SetActive(Room7_State);
+        }
+        foreach (GameObject item in Other_cGroup)
+        {
+            item.SetActive(Other_State);
+        }
+    }
 }
